@@ -11,6 +11,15 @@
 \usepackage{sansmathfonts}
 \usepackage[section]{placeins}
 
+\usepackage{fancyhdr}
+\fancypagestyle{plain}{
+  \fancyhf{}%
+  \fancyfoot[R]{\thepage}
+}
+\pagestyle{plain}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -121,18 +130,18 @@ En las Fig. \ref{fig:equipo1} y Fig. \ref{fig:equipo2} se observa a parte del eq
 
 \section{FPGA}
 Este proyecto, el cual se utiliza en los convertidores utilizados para controlar los motores del karting fue desarrollado en el CIDEI en conjunto con becarios y alumnos desarrollando su pasantía laboral.
-El mismo consta del desarrollo de una plataforma experimental para el uso y aprendizaje de FPGA de bajo costo y totalmente libre, la cual puede observarse en la Fig. \ref{fig:fpga}.El hardware (Desarrollado y validado en el ITBA) será libre y existen herramientas de software para utilizar en los procesos de síntesis, implementación, validación y programación, también libres como por ejemplo la plataforma libre creada por by Clifford Wolf, \href{http://www.clifford.at/icestorm/}{Plataforma Libre icestorm}.
+El mismo consta del desarrollo de una plataforma experimental para el uso y aprendizaje de FPGA de bajo costo y totalmente libre, la cual puede observarse en la Fig. \ref{fig:fpga}. El hardware (Desarrollado y validado en el ITBA) será libre y existen herramientas de software para utilizar en los procesos de síntesis, implementación, validación y programación, también libres como por ejemplo la plataforma libre creada por by Clifford Wolf, \href{http://www.clifford.at/icestorm/}{Project IceStorm}.
 %
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth]{figs/fpga1.png}
+    \includegraphics[width=0.4\textwidth]{figs/fpga1.png} \\
     \includegraphics[width=0.4\textwidth]{figs/fpga2.png}
     \includegraphics[width=0.4\textwidth]{figs/fpga3.png}
     \caption{FPGA}
     \label{fig:fpga}
 \end{figure}
 
-La plataforma desarrollada también se combina con el software de la firma Lattice, el cual se utiliza para programar el chip iCE40-UP5K,  \href{http://www.latticesemi.com/Products/DesignSoftwareAndIP/FPGAandLDS/Radiant}{Lattice Radiant software}, el cual soporta las versiones iCE40 UltraPlus y provee una forma de desarrollar aplicaciones en forma efectiva y de manera eficiente. 
+La plataforma desarrollada también se combina con el software de la firma Lattice, el cual se utiliza para programar el chip iCE40-UP5K,  \href{http://www.latticesemi.com/Products/DesignSoftwareAndIP/FPGAandLDS/Radiant}{Lattice Radiant}. Este software soporta las versiones iCE40 UltraPlus de la familia de FPGAs y provee una forma de desarrollar aplicaciones en forma efectiva y eficiente con soporte directo del fabricante.
 
 El objetivo es crear un ecosistema libre donde existan múltiples ejemplos de uso, tutoriales y videos de iniciación con el fín de fomentar el uso y aprendizaje de estas tecnologías. Está previsto comenzar a desarrollar cursos basados en la plataforma y asimismo utilizarla en las materias pertinentes de la carrera de Ing. Electrónica.
 
@@ -151,6 +160,8 @@ Este otro proyecto, combina la facilidad de programación de la plataforma \href
 Este circuito permitirá añadir diversos sensores de una forma simple y sistemática al proyecto.
 
 \section{Información Adicional}
-En el siguiente enlace de Google Drive \texttrademark se incluyen imágenes y vídeos del karting y algunas de las pruebas de conducción realizadas. 
+En el siguiente enlace de Google Drive\texttrademark \space se incluyen imágenes adicionales y vídeos de algunas de las pruebas de conducción realizadas. 
+
+\href{https://drive.google.com/drive/folders/1y7x4eIJOVqtQwzSrL0hkvnH02-Jpi3-s?usp=sharing}{https://drive.google.com/drive/folders/1y7x4eIJOVqtQwzSrL0hkvnH02-Jpi3-s?usp=sharing}
 
 \end{document}
