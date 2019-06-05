@@ -1,4 +1,4 @@
-\documentclass[a4]{article}
+\documentclass[a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
@@ -19,7 +19,7 @@
 }
 \urlstyle{same}
 
-\title{Informe de Avance Proyecto Karting 2019}
+\title{Informe de Avance - Proyecto Karting 2019}
 \author{Dr. Ing. Pablo Cossutta}
 \date{Junio 2019}
 
@@ -27,11 +27,11 @@
 \maketitle
 %
 \section{Introducción}
-El proyecto Karting Eléctrico es un proyecto multidisciplinario donde convergen varias disciplinas, electrónica, informática y mecánica. Dentro del ámbito electrónico, involucra a varias áreas como por ej. el desarrollo de convertidores de potencia, control y comunicaciones entre otras.
+El proyecto denominado Karting Eléctrico es multidisciplinario ya que convergen varias disciplinas diferentes como electrónica, informática y mecánica. Dentro del ámbito electrónico, involucra a varias áreas de la misma como por ej. el desarrollo de convertidores de potencia, sistemas de control, modelado e identificación y comunicaciones entre otras.
 
-El objetivo principal del mismo es proveer al ITBA de una plataforma de movilidad eléctrica experimental, donde toda la eléctronica esté desarrollada en el instituto con el fin de impulsar los trabajos de investigación relacionados con la movilidad eléctrica. Dentro de las posibles áreas de investigación se encuentra el diseño y control de convertidores para motores eléctricos del tipo BLDC, control de tracción y estabilidad de vehículos eléctricos y desarrollo de sistemas de carga rápida de baterías.
+El objetivo principal de este proyecto es proveer al ITBA de una plataforma de movilidad eléctrica experimental de tracción integral, donde toda la electrónica esté desarrollada en el propio instituto con el fin de impulsar los trabajos de investigación relacionados con movilidad eléctrica. Dentro de las posibles áreas de investigación se encuentra el diseño y control de convertidores para motores eléctricos del tipo BLDC, control de tracción y estabilidad de vehículos eléctricos y desarrollo de sistemas de carga rápida de baterías.
 
-Con este objetivo en mente y teniendo en cuenta las restricciones de espacio se procedió a desarrollar un prototipo de Karting eléctrico de tracción integral. La plataforma experimental realizada se observa en la Fig. \ref{fig:kart1}.
+Con este objetivo en mente y teniendo en cuenta las restricciones de espacio se procedió a desarrollar un prototipo de karting eléctrico de tracción integral basado en un chasis tradicional. La plataforma experimental realizada se observa en la Fig. \ref{fig:kart1}.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{figs/kart1.jpg}
@@ -39,29 +39,35 @@ Con este objetivo en mente y teniendo en cuenta las restricciones de espacio se 
     \label{fig:kart1}
 \end{figure}
 
-Los trabajos realizados incluyen desde el diseño y construcción de las llantas que incluyen los motores de las ruedas delanteras adentro hasta el diseño y control de los convertidores electrónicos de potencia, Fig. \ref{fig:kart2}.
+Los trabajos realizados incluyen desde el diseño y construcción de las llantas que incluyen los motores de las ruedas delanteras hasta el diseño y control de los convertidores electrónicos de potencia, pasando por el dimensionamiento de los cableados y la instalación de los mismos. En la Fig. \ref{fig:kart2} puede observarse el estado actual de construcción del prototipo.
+%
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{figs/kart2.jpg}
     \caption{Detalle de partes}
     \label{fig:kart2}
 \end{figure}
-Los convertidores diseñados y construidos fueron desarrollados en el CIDEI y se encuentran montados en la parte trasera del Karting. Los mismos fueron construidos en función de las especificaciones de los motores traseros, los cuales son de una potencia 10 veces superior a los delanteros y todavía en esta fase del proyecto no se encuentran instalados.
 
-De momento el proyecto se encuentra en una fase preeliminar donde se validará el diseño y la mecánica del karting con tracción delantera. La siguiente fase del proyecto incluye la colocación e instalación de los motores traseros junto con su electrónica asociada y el reacomodamiento de las baterías y la electrónica en los laterales del vehículo. En esta etapa será necesario incorporar un freno mecánico extra ya que el eje trasero será independiente para cada rueda y es necesario un mecanismo de seguridad físico con el cual poder detener al vehículo.
+Los convertidores fueron diseñados y construidos en el Centro de investigación y Desarrollos en Electrónica Industrial (CIDEI) y se encuentran montados en la parte trasera del vehículo. Los mismos fueron dimensionados en función de las especificaciones de los motores traseros, los cuales son de una potencia 10 veces superior a los delanteros y todavía en la fase actual en la que se encuentra el proyecto no se encuentran instalados.
 
-Este proyecto se vincula con otros proyectos en progreso, ya sea porque se utilizan en la electrónica como la placa de FPGA libre o porque son necesarios para la versión final del prototipo como la placa de Arduino con comunicación CAN.
+De momento el proyecto se encuentra en una fase preeliminar donde se validará el diseño y la mecánica del karting con tracción delantera únicamente. La siguiente fase del proyecto incluye la colocación e instalación de los motores traseros junto con su electrónica asociada y el reacomodamiento de las baterías y la electrónica en los laterales del vehículo. En esta etapa será necesario incorporar un freno mecánico extra ya que el eje trasero será independiente para cada rueda y es necesario un mecanismo de seguridad físico con el cual detener al vehículo.
+
+Este proyecto se vincula con otros proyectos en progreso, ya sea porque se utilizan en la electrónica del vehículo, como la placa de FPGA libre, o porque son necesarios para la versión final del prototipo como la placa de Arduino con comunicación CAN.
 
 \subsection{Etapas de desarrollo}
-Se dividió al proyecto en varias etapas, de momento se encuentra culminada la etapa 1 y la etapa 2 se encuentra en proceso. Estas etapas se detallan a continuación.
+Se dividió al proyecto en varias etapas, donde la etapa 1 está finalizada y la etapa 2 se encuentra en ejecución. Estas etapas y una breve descripción de las tareas asociadas a las mismas se detallan a continuación.
 \begin{enumerate}
     \item Desarrollo de especificaciones y compra de motores
     \begin{itemize}
-        \item Es esta etapa se definen las especificaciones de funcionamiento del karting y se realiza la compra de los motores ya que por falta de especificaciones completas de los mismos son necesarios para el diseño de las piezas que se requieren construir - FINALIZADO
+        \item En esta etapa se definen las especificaciones de funcionamiento del karting y se realiza la compra de los motores ya que por falta de especificaciones completas de los mismos son necesarios para el diseño de las piezas que se requieren construir \par FINALIZADO
     \end{itemize}
+    \item Diseño, construcción y verificación de la electrónica necesaria
+    \begin{itemize}
+        \item Se desarrollan los convertidores electrónicos de potencia para los motores y también la electrónica asociada a los sensores externos. \par Convertidores: FINALIZADO, Placa A2CAN: EN CONSTRUCCIÓN
+    \end{itemize}    
     \item Tracción Delantera
     \begin{itemize}
-        \item Se incorporarán los motores eléctricos delanteros y se desarrollarán las primeras pruebas de funcionamiento en condiciones reales - EN PROCESO
+        \item Se incorporarán los motores eléctricos delanteros y se desarrollarán las primeras pruebas de funcionamiento en condiciones reales \par EN PROCESO
     \end{itemize}
     \item Tracción Trasera
     \begin{itemize}
@@ -73,7 +79,7 @@ Se dividió al proyecto en varias etapas, de momento se encuentra culminada la e
     \end{itemize}    
     \item Incorporación de baterías de última generación
     \begin{itemize}
-        \item Los vehículos eléctricos actualmente se desarrollan en base a baterías de Litio ion, las cuales poseen un gran rendimiento en bajo volumen pero son costosas y requieren hardware específico para su utilización - BUSCANDO FINANCIAMIENTO
+        \item Los vehículos eléctricos actualmente se desarrollan en base a baterías de Litio ion, las cuales poseen un gran rendimiento en bajo volumen pero son costosas y requieren hardware específico para su utilización \par BUSCANDO FINANCIAMIENTO
     \end{itemize}    
     \item Trabajos de Investigación
     \begin{itemize}
@@ -87,7 +93,7 @@ El equipo de trabajo está compuesto por varias personas:
     \item Dr. Miguel Aguirre - Director del Dpto. de Eléctrica y Electrónica
     \item Dr. Pablo Cossutta - Director del CIDEI
     \item Ing. Juan Matus - Técnico asociado a tareas de investigación
-    \item Jorge Cáceres - Técnico asociada a tareas de soporte del Dpto.
+    \item Jorge Cáceres - Técnico asociado a tareas de soporte del Dpto.
     \item Milagros Moutín - Becarias Ing. Electrónica
     \item Pablo Gonzalez - Becario Ing. Electrónica
     \item Marcos Brito Devoto - Alumno Ing. Electrónica
@@ -143,4 +149,8 @@ Este otro proyecto, combina la facilidad de programación de la plataforma \href
 \end{figure}
 
 Este circuito permitirá añadir diversos sensores de una forma simple y sistemática al proyecto.
+
+\section{Información Adicional}
+En el siguiente enlace de Google Drive \texttrademark se incluyen imágenes y vídeos del karting y algunas de las pruebas de conducción realizadas. 
+
 \end{document}
